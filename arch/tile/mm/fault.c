@@ -571,13 +571,23 @@ no_context:
 out_of_memory:
 	up_read(&mm->mmap_sem);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> d45b789... arch: mm: remove obsolete init OOM protection
 	if (is_global_init(tsk)) {
 		yield();
 		down_read(&mm->mmap_sem);
 		goto survive;
 	}
+<<<<<<< HEAD
 >>>>>>> b13a714... mm: invoke oom-killer from remaining unconverted page fault handlers
+=======
+
+=======
+>>>>>>> 20c92c0... arch: mm: remove obsolete init OOM protection
+>>>>>>> d45b789... arch: mm: remove obsolete init OOM protection
 	if (is_kernel_mode)
 		goto no_context;
 	pagefault_out_of_memory();
