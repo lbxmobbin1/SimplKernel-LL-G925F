@@ -111,6 +111,18 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  you to get a full dynamic cpu frequency capable system by simply
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactive' governor for latency-sensitive workloads.
+	  
+config CPU_FREQ_DEFAULT_GOV_INTELLIACTIVE
+	bool "intelliactive"
+
+config CPU_FREQ_DEFAULT_GOV_BLUACTIVE
+	bool "bluactive"
+
+config CPU_FREQ_DEFAULT_GOV_MYTHX_PLUG
+	bool "mythx_plug"
+	
+config CPU_FREQ_DEFAULT_GOV_SHAMUACTIVE
+	bool "shamuactive"
 
 endchoice
 
@@ -186,6 +198,18 @@ config CPU_FREQ_GOV_INTERACTIVE
 	  For details, take a look at linux/Documentation/cpu-freq.
 
 	  If in doubt, say N.
+	  
+config CPU_FREQ_GOV_INTELLIACTIVE
+	tristate "'intelliactive' cpufreq policy governor"
+	
+config CPU_FREQ_GOV_BLUACTIVE
+	tristate "'bluactive' cpufreq policy governor"
+	
+config CPU_FREQ_GOV_MYTHX_PLUG
+	tristate "'mythx_plug' cpufreq policy governor"
+	
+config CPU_FREQ_GOV_SHAMUACTIVE
+	tristate "'shamuactive' cpufreq policy governor"
 
 config MODE_AUTO_CHANGE
 	bool "automatic governor parameter change"
