@@ -572,8 +572,12 @@ out_of_memory:
 	up_read(&mm->mmap_sem);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+
+>>>>>>> c1b68d9... Derps again
 
 >>>>>>> d45b789... arch: mm: remove obsolete init OOM protection
 	if (is_global_init(tsk)) {
@@ -585,9 +589,13 @@ out_of_memory:
 >>>>>>> b13a714... mm: invoke oom-killer from remaining unconverted page fault handlers
 =======
 
+<<<<<<< HEAD
 =======
 >>>>>>> 20c92c0... arch: mm: remove obsolete init OOM protection
 >>>>>>> d45b789... arch: mm: remove obsolete init OOM protection
+=======
+
+>>>>>>> c1b68d9... Derps again
 	if (is_kernel_mode)
 		goto no_context;
 	pagefault_out_of_memory();
