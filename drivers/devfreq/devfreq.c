@@ -19,6 +19,7 @@
 #include <linux/slab.h>
 #include <linux/stat.h>
 #include <linux/opp.h>
+#include <linux/sysfs_helpers.h>
 #include <linux/devfreq.h>
 #include <linux/workqueue.h>
 #include <linux/platform_device.h>
