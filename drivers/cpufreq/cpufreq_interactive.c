@@ -2004,8 +2004,7 @@ static void cpufreq_param_set_init(struct cpufreq_interactive_tunables *tunables
 {
 	unsigned int i;
 
-	/* Default is 2 */
-	tunables->multi_enter_load = DEFAULT_TARGET_LOAD * num_possible_cpus() / 4;
+	tunables->multi_enter_load = DEFAULT_TARGET_LOAD * num_possible_cpus() / 2;
 
 	for (i = 0; i < MAX_PARAM_SET; i++) {
 		tunables->hispeed_freq_set[i] = 0;
