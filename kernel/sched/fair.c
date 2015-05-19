@@ -1583,7 +1583,7 @@ static inline void __update_group_entity_contrib(struct sched_entity *se) {}
  * tweaking suit particular needs.
  */
 
-unsigned int hmp_up_threshold = 480;
+unsigned int hmp_up_threshold = 560;
 unsigned int hmp_down_threshold = 235;
 
 unsigned int hmp_semiboost_up_threshold = 400;
